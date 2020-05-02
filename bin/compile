@@ -129,7 +129,7 @@ if [ -n "${MINECRAFT_EULA:-""}" ]; then
   echo "prevent-proxy-connections=false" >> $BUILD_DIR/server.properties
   echo "use-native-transport=true" >> $BUILD_DIR/server.properties
   echo "motd=A Minecraft Server" >> $BUILD_DIR/server.properties
-  echo "enable-rcon=false" >> $BUILD_DIR/server.properties"
+  echo "enable-rcon=false" >> $BUILD_DIR/server.properties
   
   echo "done"
 fi
