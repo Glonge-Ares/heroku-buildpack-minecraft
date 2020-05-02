@@ -84,7 +84,6 @@ if [ -n "${MINECRAFT_EULA:-""}" ]; then
   echo -n "-----> Accepting Minecraft EULA... "
   echo "eula=true" >> $BUILD_DIR/eula.txt
   
-  rm $BUILD_DIR/server.properties
   touch $BUILD_DIR/server.properties
   
   echo "spawn-protection=1" > $BUILD_DIR/server.properties
