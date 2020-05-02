@@ -85,7 +85,51 @@ if [ -n "${MINECRAFT_EULA:-""}" ]; then
   echo "eula=true" >> $BUILD_DIR/eula.txt
   echo "spawn-protection=16" >> $BUILD_DIR/server.properties
   
-  echo "offline-mode=false" >> $BUILD_DIR/server.properties
+  echo "max-tick-time=60000" >> $BUILD_DIR/server.properties
+    
+  echo "query.port=25565" >> $BUILD_DIR/server.properties
+  echo "generator-settings=" >> $BUILD_DIR/server.properties
+  echo "force-gamemode=false" >> $BUILD_DIR/server.properties
+  echo "allow-nether=true" >> $BUILD_DIR/server.properties
+  echo "enforce-whitelist=false" >> $BUILD_DIR/server.properties
+  echo "gamemode=survival" >> $BUILD_DIR/server.properties
+  echo "broadcast-console-to-ops=true" >> $BUILD_DIR/server.properties
+  echo "enable-query=false" >> $BUILD_DIR/server.properties
+  echo "player-idle-timeout=0" >> $BUILD_DIR/server.properties
+  echo "difficulty=normal" >> $BUILD_DIR/server.properties
+  echo "spawn-monsters=true" >> $BUILD_DIR/server.properties
+  echo "broadcast-rcon-to-ops=true" >> $BUILD_DIR/server.properties
+  echo "op-permission-level=4" >> $BUILD_DIR/server.properties
+  echo "pvp=false" >> $BUILD_DIR/server.properties
+  echo "snooper-enabled=true" >> $BUILD_DIR/server.properties
+  echo "level-type=default" >> $BUILD_DIR/server.properties
+  echo "hardcore=false" >> $BUILD_DIR/server.properties
+  echo "enable-command-block=false" >> $BUILD_DIR/server.properties
+  echo "max-players=20" >> $BUILD_DIR/server.properties
+  echo "network-compression-threshold=256" >> $BUILD_DIR/server.properties
+  echo "resource-pack-sha1=" >> $BUILD_DIR/server.properties
+  echo "max-world-size=29999984" >> $BUILD_DIR/server.properties
+  echo "function-permission-level=2" >> $BUILD_DIR/server.properties
+  echo "rcon.port=25575" >> $BUILD_DIR/server.properties
+  echo "server-port=25565" >> $BUILD_DIR/server.properties
+  echo "debug=false" >> $BUILD_DIR/server.properties
+  echo "server-ip=" >> $BUILD_DIR/server.properties
+  echo "spawn-npcs=true" >> $BUILD_DIR/server.properties
+  echo "allow-flight=false" >> $BUILD_DIR/server.properties
+  echo "level-name=world" >> $BUILD_DIR/server.properties
+  echo "view-distance=4" >> $BUILD_DIR/server.properties
+  echo "resource-pack=" >> $BUILD_DIR/server.properties
+  echo "spawn-animals=true" >> $BUILD_DIR/server.properties
+  echo "white-list=false" >> $BUILD_DIR/server.properties
+  echo "rcon.password=12341234" >> $BUILD_DIR/server.properties
+  echo "generate-structures=true" >> $BUILD_DIR/server.properties
+  echo "online-mode=false" >> $BUILD_DIR/server.properties
+  echo "max-build-height=256" >> $BUILD_DIR/server.properties
+  echo "level-seed=" >> $BUILD_DIR/server.properties
+  echo "prevent-proxy-connections=false" >> $BUILD_DIR/server.properties
+  echo "use-native-transport=true" >> $BUILD_DIR/server.properties
+  echo "motd=A Minecraft Server" >> $BUILD_DIR/server.properties
+  echo "enable-rcon=false" >> $BUILD_DIR/server.properties"
   
   echo "done"
 fi
