@@ -85,51 +85,7 @@ if [ -n "${MINECRAFT_EULA:-""}" ]; then
   echo "eula=true" >> $BUILD_DIR/eula.txt
   echo "spawn-protection=16" >> $BUILD_DIR/server.properties
   
-  echo "max-tick-time=60000" >> $BUILD_DIR/server.properties
-  
-  echo "query.port=25565 
-    generator-settings=\n
-    force-gamemode=false\n
-    allow-nether=true\n
-    enforce-whitelist=false\n
-    gamemode=survival\n
-    broadcast-console-to-ops=true\n
-    enable-query=false\n
-    player-idle-timeout=0\n
-    difficulty=normal\n
-    spawn-monsters=true\n
-    broadcast-rcon-to-ops=true\n
-    op-permission-level=4\n
-    pvp=false\n
-    snooper-enabled=true\n
-    level-type=default\n
-    hardcore=false\n
-    enable-command-block=false\n
-    max-players=20\n
-    network-compression-threshold=256\n
-    resource-pack-sha1=\n
-    max-world-size=29999984\n
-    function-permission-level=2\n
-    rcon.port=25575\n
-    server-port=25565\n
-    debug=false\n
-    server-ip=\n
-    spawn-npcs=true\n
-    allow-flight=false\n
-    level-name=world\n
-    view-distance=4\n
-    resource-pack=\n
-    spawn-animals=true\n
-    white-list=false\n
-    rcon.password=12341234\n
-    generate-structures=true\n
-    online-mode=false\n
-    max-build-height=256\n
-    level-seed=\n
-    prevent-proxy-connections=false\n
-    use-native-transport=true\n
-    motd=A Minecraft Server\n
-    enable-rcon=false\n" >> $BUILD_DIR/server.properties
+  echo "offline-mode=false" >> $BUILD_DIR/server.properties
   
   echo "done"
 fi
