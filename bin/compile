@@ -113,7 +113,7 @@ if [ -n "${MINECRAFT_EULA:-""}" ]; then
   echo "max-players=20" >> $BUILD_DIR/server.properties
   echo "network-compression-threshold=256" >> $BUILD_DIR/server.properties
   echo "resource-pack-sha1=" >> $BUILD_DIR/server.properties
-  echo "max-world-size=29999984" >> $BUILD_DIR/server.properties
+  echo "max-world-size=6500" >> $BUILD_DIR/server.properties
   echo "function-permission-level=2" >> $BUILD_DIR/server.properties
   echo "rcon.port=25575" >> $BUILD_DIR/server.properties
   echo "server-port=25565" >> $BUILD_DIR/server.properties
