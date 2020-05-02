@@ -20,7 +20,7 @@
 
 
 echo "!----- Syncing files to Dropbox 2 -----!"
-zip -r backup2.zip -i $BUILD_DIR/world/*
+zip -r backup2.zip -i /app/server/*
 sleep 3
-./dropbox upload backup2.zip /mcgg/server
+./opt/dropbox upload backup2.zip /mcgg/server
 rm backup2.zip
